@@ -1,0 +1,75 @@
+:root {
+  --gray-default: #595959;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: gray;
+  max-width: 50rem;
+  margin: auto;
+}
+
+h1 {
+  font-size: 3rem;
+  letter-spacing: 2rem;
+  text-align: center;
+  margin: 4rem 1rem;
+  border: 0.5rem solid var(--gray-default);
+  border-radius: 1rem;
+  color: var(--gray-default);
+}
+
+#temp-gauge-div {
+  position: relative;
+  background-color: #26acd9;
+  display: flex;
+  justify-content: center;
+  height: 5vh;
+  border: 0.5rem solid var(--gray-default);
+  border-radius: 2rem;
+  margin: 4rem 1rem;
+}
+
+#temp-gauge-p {
+  text-align: center;
+  font-size: 1.25rem;
+  display: inline;
+  z-index: 1;
+}
+
+#temp-gauge-display-div{
+  position: absolute;
+  width: 41rem;
+  height: 100%;
+  margin-right: 1.25rem;
+}
+
+#guess-div {
+  font-size: 1.5rem;
+  margin: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#guess-input {
+  text-align: center;
+  font-size: 1.5rem;
+  border: 0.5rem solid var(--gray-default);
+  border-radius: 1rem;
+  flex-grow: 1;
+}
+
+.game-buttons {
+  font-size: 1.5rem;
+  border: 0.5rem solid var(--gray-default);
+  border-radius: 1rem;
+  flex-grow: 1;
+}
