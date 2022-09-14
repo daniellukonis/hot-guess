@@ -6,19 +6,40 @@
   <meta name="viewport" content="width=device-width">
   <title>Hot Guess</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="scripts/helpers.js" defer></script>
+  <script src="scripts/input.js" defer></script>
+  <script src="scripts/display.js" defer></script>
   <script src="script.js" defer></script>
+
 </head>
 
 <body>
-  <h1>Hot Guess</h1>
-  <div id="temp-gauge-div">
-    <p id="temp-gauge-p">0----10----20----30----40----50----60----70----80----90----100</p>
-    <div id="temp-gauge-display-div"></div>
-  </div>
-  <div id="guess-div">
-    <input type="number" placeholder="Guess 0 - 100" id="guess-input" min="0" max="100" required>
-    <button id="guess-button" class="game-buttons">Guess</button>
-    <button id="restart-button" class="game-buttons">Restart</button>
+  <div id="game-board-div">
+    <!-- HEADING -->
+    <h1>Hot Guess</h1>
+
+    <!-- TEMP GAUGE -->
+    <div id="temp-gauge-div">
+      <p id="temp-gauge-p">0----10----20----30----40----50----60----70----80----90----100</p>
+      <div id="temp-gauge-heat-div">
+      </div>
+    </div>
+
+    <!-- GUESS INPUTS -->
+    <div id="guess-inputs-div">
+      <input type="number" class="guess-input" min="0" max="100" placeholder="#" autocomplete="off" disabled>
+      <input type="number" class="guess-input" min="0" max="100" placeholder="#" autocomplete="off" disabled>
+      <input type="number" class="guess-input" min="0" max="100" placeholder="#" autocomplete="off" disabled>
+      <input type="number" class="guess-input" min="0" max="100" placeholder="#" autocomplete="off" disabled>
+      <input type="number" class="guess-input" min="0" max="100" placeholder="#" autocomplete="off" disabled>
+    </div>
+
+    <!-- GUESS BUTTONS -->
+    <div id="guess-buttons-div">
+      <!--       <button id="guess-button" class="game-buttons">Guess</button> -->
+      <button id="restart-button" class="game-buttons">Restart</button>
+    </div>
+
   </div>
 </body>
 
